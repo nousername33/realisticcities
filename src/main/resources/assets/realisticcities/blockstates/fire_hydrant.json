@@ -1,0 +1,21 @@
+{  
+    "variants": {
+        "facing=east": {
+            "model": "realisticcities:block/fire_hydrant",
+            "y": 90
+        },
+        "facing=north": {
+            "model": "realisticcities:block/fire_hydrant",
+            "y": 0
+        },
+        "facing=west": {
+            "model": "realisticcities:block/fire_hydrant",
+            "y": 270
+        },
+        "facing=south": {
+            "model": "realisticcities:block/fire_hydrant",
+            "y": 180
+        }
+    }
+}
+  

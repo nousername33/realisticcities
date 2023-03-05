@@ -33,6 +33,7 @@ import net.realisticcities.mod.block.concrete;
 import net.realisticcities.mod.block.concrete_slab;
 import net.realisticcities.mod.block.concrete_stairs;
 import net.realisticcities.mod.block.concrete_wall;
+import net.realisticcities.mod.block.fire_hydrant;
 import net.realisticcities.mod.block.median_white;
 import net.realisticcities.mod.block.median_yellow;
 
@@ -129,18 +130,25 @@ public class RealisticCities implements ModInitializer {
 
 	//REALISTICCITIES ROAD DECORATIONS
 	
-	public static final net.realisticcities.mod.block.traffic_cone TRAFFIC_CONE = new traffic_cone
+	public static final traffic_cone TRAFFIC_CONE = new traffic_cone
 		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1f,5f).requiresTool());
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","traffic_cone"), TRAFFIC_CONE);
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","traffic_cone"), new BlockItem(TRAFFIC_CONE, new Item.Settings()));
 	}
 	
-	public static final net.realisticcities.mod.block.bike_cone BIKE_CONE = new bike_cone
+	public static final bike_cone BIKE_CONE = new bike_cone
 		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1f,5f).requiresTool());
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","bike_cone"), BIKE_CONE);
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","bike_cone"), new BlockItem(BIKE_CONE, new Item.Settings()));
+	}
+
+	public static final fire_hydrant FIRE_HYDRANT = new fire_hydrant
+		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1f,5f).requiresTool());
+	static {
+		Registry.register(Registry.BLOCK, new Identifier("realisticcities","fire_hydrant"), FIRE_HYDRANT);
+		Registry.register(Registry.ITEM, new Identifier("realisticcities","fire_hydrant"), new BlockItem(FIRE_HYDRANT, new Item.Settings()));
 	}
 
 	//REALISTICCITIES BLOCKS
@@ -219,8 +227,9 @@ public class RealisticCities implements ModInitializer {
 		new Identifier("realisticcities", "realisticcities_road_decorations"))
 		.icon(() -> new ItemStack(RealisticCities.TRAFFIC_CONE))
 		.appendItems(stacks -> {
-			stacks.add(new ItemStack(RealisticCities.BIKE_CONE));
 			stacks.add(new ItemStack(RealisticCities.TRAFFIC_CONE));
+			stacks.add(new ItemStack(RealisticCities.FIRE_HYDRANT));
+			stacks.add(new ItemStack(RealisticCities.BIKE_CONE));
 		})
 		.build();
 
@@ -245,5 +254,3 @@ public class RealisticCities implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("realisticcities", "mud_ball"), MUD_BALL);
 	}
 }
-
-
