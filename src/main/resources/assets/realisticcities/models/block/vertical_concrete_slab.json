@@ -1,0 +1,9 @@
+{
+    "parent": "realisticcities:block/vertical_slab",
+    "textures": {
+        "bottom": "realisticcities:block/concrete",
+        "top": "realisticcities:block/concrete",
+        "side": "realisticcities:block/concrete"
+    }
+}
+

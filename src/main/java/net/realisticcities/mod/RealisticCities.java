@@ -28,6 +28,7 @@ import net.realisticcities.mod.block.road_with_straight_white_line;
 import net.realisticcities.mod.block.road_with_straight_yellow_line;
 import net.realisticcities.mod.block.thin_tree;
 import net.realisticcities.mod.block.traffic_cone;
+import net.realisticcities.mod.block.vertical_concrete_slab;
 import net.realisticcities.mod.block.concrete;
 import net.realisticcities.mod.block.concrete_slab;
 import net.realisticcities.mod.block.concrete_stairs;
@@ -158,6 +159,13 @@ public class RealisticCities implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","concrete_slab"), new BlockItem(CONCRETE_SLAB, new Item.Settings()));
 	}
 
+	public static final vertical_concrete_slab VERTICAL_CONCRETE_SLAB = new vertical_concrete_slab
+		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
+	static {
+		Registry.register(Registry.BLOCK, new Identifier("realisticcities","vertical_concrete_slab"), VERTICAL_CONCRETE_SLAB);
+		Registry.register(Registry.ITEM, new Identifier("realisticcities","vertical_concrete_slab"), new BlockItem(VERTICAL_CONCRETE_SLAB, new Item.Settings()));
+	}
+
 	public static final concrete_stairs CONCRETE_STAIRS = new concrete_stairs
 		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
 	static {
@@ -222,6 +230,7 @@ public class RealisticCities implements ModInitializer {
 		.appendItems(stacks -> {
 			stacks.add(new ItemStack(RealisticCities.CONCRETE));
 			stacks.add(new ItemStack(RealisticCities.CONCRETE_SLAB));
+			stacks.add(new ItemStack(RealisticCities.VERTICAL_CONCRETE_SLAB));
 			stacks.add(new ItemStack(RealisticCities.CONCRETE_STAIRS));
 			stacks.add(new ItemStack(RealisticCities.CONCRETE_WALL));
 			stacks.add(new ItemStack(RealisticCities.THIN_TREE));
