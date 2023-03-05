@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+        "up": "realisticcities:block/bike_lane_side_90",
+        "down": "realisticcities:block/road",
+        "north": "realisticcities:block/road",
+        "south": "realisticcities:block/road",
+        "east": "realisticcities:block/bike_lane_side_90",
+        "west": "realisticcities:block/bike_lane_side_90",
+        "particle": "realisticcities:block/bike_lane_side_90"
+    }
+}

@@ -4,7 +4,7 @@
   "version": "0.1",
 
   "name": "Realistic Cities",
-  "description": "Adds idk yet lol this is a test",
+  "description": "Adds roads and road decorations for now. Will update in the future.",
   "authors": [
     "HyperZ"
   ],
@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "hyperzs.realistic.cities.RealisticCities"
+      "net.realisticcities.mod.RealisticCities"
     ]
   },
   "mixins": [
@@ -27,12 +27,11 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.11",
-    "fabric-api": "0.57.0",
+    "fabricloader": ">=0.14.14",
     "minecraft": "1.19",
     "java": ">=17"
   },
   "suggests": {
-    "another-mod": "*"
+    "another-mod": "Minecraft Transit Railway"
   }
 }

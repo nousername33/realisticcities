@@ -1,0 +1,27 @@
+{
+    "itemGroup.realisticcities.realisticcities_roads": "RealisticCities Roads",
+    "block.realisticcities.road": "Road",
+    "block.realisticcities.road_with_straight_yellow_line": "Road with Straight Yellow Line (Middle)",
+    "block.realisticcities.road_with_straight_white_line": "Road with Straight White Line (Middle)",
+    "block.realisticcities.road_with_double_straight_yellow_line": "Road with Straight Yellow Line (Double)",
+    "block.realisticcities.road_with_double_straight_white_line": "Road with Straight White Line (Double)",
+    "block.realisticcities.median_yellow": "Yellow Median",
+    "block.realisticcities.median_white": "White Median",
+    "block.realisticcities.bike_median": "Bike Lane Median",
+    "block.realisticcities.bike_lane": "Bike Lane",
+    "block.realisticcities.bike_lane_corner": "Bike Lane (Corner)",
+    "block.realisticcities.bike_lane_side": "Bike Lane (Side)",
+    "block.realisticcities.bike_lane_ind": "Bike Lane (Indicator)",
+    
+    "itemGroup.realisticcities.realisticcities_road_decorations": "RealisticCities Road Decorations",
+    "block.realisticcities.bike_cone": "Bike Cone",
+    "block.realisticcities.traffic_cone": "Traffic Cone",
+
+    "itemGroup.realisticcities.realisticcities_blocks": "RealisticCities Blocks",
+    "block.realisticcities.concrete": "Concrete",
+    "block.realisticcities.concrete_slab": "Concrete Slab",
+    "block.realisticcities.concrete_stairs": "Concrete Stairs",
+    "block.realisticcities.concrete_wall": "Concrete Wall",
+    "block.realisticcities.thin_tree": "Thin Tree Trunk",
+    "block.realisticcities.bench": "Bench"
+}

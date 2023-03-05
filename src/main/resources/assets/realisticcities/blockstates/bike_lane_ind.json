@@ -1,0 +1,21 @@
+{  
+    "variants": {
+        "facing=east": {
+            "model": "realisticcities:block/bike_lane_ind",
+            "y": 270
+        },
+        "facing=north": {
+            "model": "realisticcities:block/bike_lane_ind",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "realisticcities:block/bike_lane_ind",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "realisticcities:block/bike_lane_ind",
+            "y": 0
+        }
+    }
+}
+  

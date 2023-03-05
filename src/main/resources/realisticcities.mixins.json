@@ -1,12 +1,12 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "hyperzs.realistic.cities.mixin",
+  "package": "net.realisticcities.mod.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
   ],
   "client": [
-    "ExampleMixin"
+    "RealisticCitiesMixin"
   ],
   "injectors": {
     "defaultRequire": 1

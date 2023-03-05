@@ -1,0 +1,17 @@
+{  
+    "variants": {
+        "facing=east": {
+            "model": "realisticcities:block/bike_median_90"
+        },
+        "facing=north": {
+            "model": "realisticcities:block/bike_median"
+        },
+        "facing=west": {
+            "model": "realisticcities:block/bike_median_90"
+        },
+        "facing=south": {
+            "model": "realisticcities:block/bike_median"
+        }
+    }
+}
+  

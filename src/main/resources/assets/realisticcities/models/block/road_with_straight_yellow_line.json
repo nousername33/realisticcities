@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+        "up": "realisticcities:block/road_with_straight_yellow_line",
+        "down": "realisticcities:block/road_with_straight_yellow_line",
+        "north": "realisticcities:block/road_with_straight_yellow_line",
+        "south": "realisticcities:block/road_with_straight_yellow_line",
+        "east": "realisticcities:block/road",
+        "west": "realisticcities:block/road",
+        "particle": "realisticcities:block/road_with_straight_yellow_line"
+    }
+}

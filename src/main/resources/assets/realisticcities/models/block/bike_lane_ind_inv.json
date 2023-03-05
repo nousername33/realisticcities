@@ -1,0 +1,6 @@
+{
+    "parent": "realisticcities:block/flat",
+    "textures": {
+      "all": "realisticcities:block/bike_lane_ind_inv"
+  }
+}

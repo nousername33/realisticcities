@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube",
+    "textures": {
+        "up": "realisticcities:block/median_white_90",
+        "down": "realisticcities:block/median_white_90",
+        "north": "realisticcities:block/road",
+        "south": "realisticcities:block/road",
+        "east": "realisticcities:block/median_white",
+        "west": "realisticcities:block/median_white",
+        "particle": "realisticcities:block/median_white_90"
+    }
+}
