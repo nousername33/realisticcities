@@ -25,7 +25,9 @@ import net.realisticcities.mod.block.road;
 import net.realisticcities.mod.block.road_with_double_straight_white_line;
 import net.realisticcities.mod.block.road_with_double_straight_yellow_line;
 import net.realisticcities.mod.block.road_with_straight_white_line;
+import net.realisticcities.mod.block.road_with_straight_white_line_side;
 import net.realisticcities.mod.block.road_with_straight_yellow_line;
+import net.realisticcities.mod.block.road_with_straight_yellow_line_side;
 import net.realisticcities.mod.block.thin_tree;
 import net.realisticcities.mod.block.traffic_cone;
 import net.realisticcities.mod.block.vertical_concrete_slab;
@@ -63,6 +65,20 @@ public class RealisticCities implements ModInitializer {
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","road_with_straight_white_line"), ROAD_WITH_STRAIGHT_WHITE_LINE);
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","road_with_straight_white_line"), new BlockItem(ROAD_WITH_STRAIGHT_WHITE_LINE, new Item.Settings()));
+	}
+
+	public static final road_with_straight_yellow_line_side ROAD_WITH_STRAIGHT_YELLOW_LINE_SIDE = new road_with_straight_yellow_line_side
+		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
+	static {
+		Registry.register(Registry.BLOCK, new Identifier("realisticcities","road_with_straight_yellow_line_side"), ROAD_WITH_STRAIGHT_YELLOW_LINE_SIDE);
+		Registry.register(Registry.ITEM, new Identifier("realisticcities","road_with_straight_yellow_line_side"), new BlockItem(ROAD_WITH_STRAIGHT_YELLOW_LINE_SIDE, new Item.Settings()));
+	}
+
+	public static final road_with_straight_white_line_side ROAD_WITH_STRAIGHT_WHITE_LINE_SIDE = new road_with_straight_white_line_side
+		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
+	static {
+		Registry.register(Registry.BLOCK, new Identifier("realisticcities","road_with_straight_white_line_side"), ROAD_WITH_STRAIGHT_WHITE_LINE_SIDE);
+		Registry.register(Registry.ITEM, new Identifier("realisticcities","road_with_straight_white_line_side"), new BlockItem(ROAD_WITH_STRAIGHT_WHITE_LINE_SIDE, new Item.Settings()));
 	}
 
 	public static final road_with_double_straight_yellow_line ROAD_WITH_DOUBLE_STRAIGHT_YELLOW_LINE = new road_with_double_straight_yellow_line
@@ -145,7 +161,7 @@ public class RealisticCities implements ModInitializer {
 	}
 
 	public static final fire_hydrant FIRE_HYDRANT = new fire_hydrant
-		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1f,5f).requiresTool());
+		(FabricBlockSettings.of(Material.METAL).sounds(BlockSoundGroup.METAL).strength(3f,5f).requiresTool());
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","fire_hydrant"), FIRE_HYDRANT);
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","fire_hydrant"), new BlockItem(FIRE_HYDRANT, new Item.Settings()));
@@ -211,6 +227,8 @@ public class RealisticCities implements ModInitializer {
 			stacks.add(new ItemStack(RealisticCities.ROAD));
 			stacks.add(new ItemStack(RealisticCities.ROAD_WITH_STRAIGHT_YELLOW_LINE));
 			stacks.add(new ItemStack(RealisticCities.ROAD_WITH_STRAIGHT_WHITE_LINE));
+			stacks.add(new ItemStack(RealisticCities.ROAD_WITH_STRAIGHT_YELLOW_LINE_SIDE));
+			stacks.add(new ItemStack(RealisticCities.ROAD_WITH_STRAIGHT_WHITE_LINE_SIDE));
 			stacks.add(new ItemStack(RealisticCities.ROAD_WITH_DOUBLE_STRAIGHT_YELLOW_LINE));
 			stacks.add(new ItemStack(RealisticCities.ROAD_WITH_DOUBLE_STRAIGHT_WHITE_LINE));
 			stacks.add(new ItemStack(RealisticCities.MEDIAN_YELLOW));
