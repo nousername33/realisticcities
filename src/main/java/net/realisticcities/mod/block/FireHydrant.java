@@ -16,8 +16,8 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-public class fire_hydrant extends HorizontalFacingBlock {
-	public fire_hydrant(Settings settings) {
+public class FireHydrant extends HorizontalFacingBlock {
+	public FireHydrant(Settings settings) {
 		super(settings);
 		setDefaultState(getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
 	}

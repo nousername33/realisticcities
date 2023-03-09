@@ -2,8 +2,8 @@ package net.realisticcities.mod.block;
 
 import net.minecraft.block.SlabBlock;
 
-public class concrete_slab extends SlabBlock {
-    public concrete_slab(Settings settings) {
+public class Slab extends SlabBlock {
+    public Slab(Settings settings) {
         super(settings);
     }
 }

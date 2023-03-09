@@ -1,7 +1,20 @@
 {  
     "variants": {
-    "": {
-        "model": "realisticcities:block/bench"
+        "facing=east": {
+            "model": "realisticcities:block/bench",
+            "y": 90
+        },
+        "facing=north": {
+            "model": "realisticcities:block/bench",
+            "y": 0
+        },
+        "facing=west": {
+            "model": "realisticcities:block/bench",
+            "y": 270
+        },
+        "facing=south": {
+            "model": "realisticcities:block/bench",
+            "y": 180
         }
     }
 }

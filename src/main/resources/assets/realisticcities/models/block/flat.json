@@ -1,14 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
-	"textures": {
-		"0": "realisticcities:block/bike_lane_ind",
-		"particle": "realisticcities:block/bike_lane_ind"
-	},
 	"elements": [
 		{
 			"from": [0, 0, 0],
-			"to": [16, 0, 16],
+			"to": [16, 0.01, 16],
 			"faces": {
 				"north": {"uv": [0, 0, 8, 0], "texture": "#0"},
 				"east": {"uv": [0, 0, 8, 0], "texture": "#0"},

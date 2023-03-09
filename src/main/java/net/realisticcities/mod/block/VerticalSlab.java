@@ -13,9 +13,9 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
-public class vertical_concrete_slab extends HorizontalFacingBlock {
+public class VerticalSlab extends HorizontalFacingBlock {
  
-	public vertical_concrete_slab(Settings settings) {
+	public VerticalSlab(Settings settings) {
 		super(settings);
 		setDefaultState(getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
 	}

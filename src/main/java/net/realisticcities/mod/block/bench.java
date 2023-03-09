@@ -13,8 +13,8 @@ import net.minecraft.world.BlockView;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.block.ShapeContext;
 
-public class bench extends HorizontalFacingBlock {
-    public bench(Settings settings) {
+public class Bench extends HorizontalFacingBlock {
+    public Bench(Settings settings) {
         super(settings);
         setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
     }
@@ -36,7 +36,7 @@ public class bench extends HorizontalFacingBlock {
             case WEST:
                 return VoxelShapes.cuboid(1, 0, 0, 11, 9, 32);
             default:
-                return VoxelShapes.cuboid(-16, 0, 1, 16, 9, 11);
+                return VoxelShapes.fullCube();
         }
     }
 

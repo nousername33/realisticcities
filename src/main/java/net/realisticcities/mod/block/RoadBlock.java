@@ -8,8 +8,8 @@ import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.math.Direction;
 
-public class road_with_straight_yellow_line extends HorizontalFacingBlock{
-    public road_with_straight_yellow_line(Settings settings) {
+public class RoadBlock extends HorizontalFacingBlock{
+    public RoadBlock(Settings settings) {
         super(settings);
         setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
     }

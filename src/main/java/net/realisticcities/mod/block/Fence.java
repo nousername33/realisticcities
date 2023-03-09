@@ -2,8 +2,8 @@ package net.realisticcities.mod.block;
 
 import net.minecraft.block.FenceBlock;
 
-public class thin_tree extends FenceBlock {
-    public thin_tree(Settings settings) {
+public class Fence extends FenceBlock {
+    public Fence(Settings settings) {
         super(settings);
     }
 }
