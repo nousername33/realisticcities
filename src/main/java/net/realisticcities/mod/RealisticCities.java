@@ -4,13 +4,17 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.PickaxeItem;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.state.StateManager;
+import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -33,63 +37,63 @@ public class RealisticCities implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("realisticcities", "road"), new BlockItem(ROAD, new Item.Settings()));
 	}
 
-	public static final RoadBlock ROAD_WITH_STRAIGHT_YELLOW_LINE = new RoadBlock
+	public static final DirBlock ROAD_WITH_STRAIGHT_YELLOW_LINE = new DirBlock
 		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","road_with_straight_yellow_line"), ROAD_WITH_STRAIGHT_YELLOW_LINE);
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","road_with_straight_yellow_line"), new BlockItem(ROAD_WITH_STRAIGHT_YELLOW_LINE, new Item.Settings()));
 	}
 
-	public static final RoadBlock ROAD_WITH_STRAIGHT_WHITE_LINE = new RoadBlock
+	public static final DirBlock ROAD_WITH_STRAIGHT_WHITE_LINE = new DirBlock
 		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","road_with_straight_white_line"), ROAD_WITH_STRAIGHT_WHITE_LINE);
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","road_with_straight_white_line"), new BlockItem(ROAD_WITH_STRAIGHT_WHITE_LINE, new Item.Settings()));
 	}
 
-	public static final RoadBlock ROAD_WITH_STRAIGHT_YELLOW_LINE_SIDE = new RoadBlock
+	public static final DirBlock ROAD_WITH_STRAIGHT_YELLOW_LINE_SIDE = new DirBlock
 		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","road_with_straight_yellow_line_side"), ROAD_WITH_STRAIGHT_YELLOW_LINE_SIDE);
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","road_with_straight_yellow_line_side"), new BlockItem(ROAD_WITH_STRAIGHT_YELLOW_LINE_SIDE, new Item.Settings()));
 	}
 
-	public static final RoadBlock ROAD_WITH_STRAIGHT_WHITE_LINE_SIDE = new RoadBlock
+	public static final DirBlock ROAD_WITH_STRAIGHT_WHITE_LINE_SIDE = new DirBlock
 		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","road_with_straight_white_line_side"), ROAD_WITH_STRAIGHT_WHITE_LINE_SIDE);
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","road_with_straight_white_line_side"), new BlockItem(ROAD_WITH_STRAIGHT_WHITE_LINE_SIDE, new Item.Settings()));
 	}
 
-	public static final RoadBlock ROAD_WITH_DOUBLE_STRAIGHT_YELLOW_LINE = new RoadBlock
+	public static final DirBlock ROAD_WITH_DOUBLE_STRAIGHT_YELLOW_LINE = new DirBlock
 		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","road_with_double_straight_yellow_line"), ROAD_WITH_DOUBLE_STRAIGHT_YELLOW_LINE);
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","road_with_double_straight_yellow_line"), new BlockItem(ROAD_WITH_DOUBLE_STRAIGHT_YELLOW_LINE, new Item.Settings()));
 	}
 
-	public static final RoadBlock ROAD_WITH_DOUBLE_STRAIGHT_WHITE_LINE = new RoadBlock
+	public static final DirBlock ROAD_WITH_DOUBLE_STRAIGHT_WHITE_LINE = new DirBlock
 		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","road_with_double_straight_white_line"), ROAD_WITH_DOUBLE_STRAIGHT_WHITE_LINE);
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","road_with_double_straight_white_line"), new BlockItem(ROAD_WITH_DOUBLE_STRAIGHT_WHITE_LINE, new Item.Settings()));
 	}
 
-	public static final RoadBlock MEDIAN_YELLOW = new RoadBlock
+	public static final DirBlock MEDIAN_YELLOW = new DirBlock
 		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","median_yellow"), MEDIAN_YELLOW);
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","median_yellow"), new BlockItem(MEDIAN_YELLOW, new Item.Settings()));
 	}
 
-	public static final RoadBlock MEDIAN_WHITE = new RoadBlock
+	public static final DirBlock MEDIAN_WHITE = new DirBlock
 		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","median_white"), MEDIAN_WHITE);
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","median_white"), new BlockItem(MEDIAN_WHITE, new Item.Settings()));
 	}
 
-	public static final RoadBlock BIKE_MEDIAN = new RoadBlock
+	public static final DirBlock BIKE_MEDIAN = new DirBlock
 		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","bike_median"), BIKE_MEDIAN);
@@ -103,14 +107,14 @@ public class RealisticCities implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","bike_lane"), new BlockItem(BIKE_LANE, new Item.Settings()));
 	}
 
-	public static final RoadBlock BIKE_LANE_SIDE = new RoadBlock
+	public static final DirBlock BIKE_LANE_SIDE = new DirBlock
 		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","bike_lane_side"), BIKE_LANE_SIDE);
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","bike_lane_side"), new BlockItem(BIKE_LANE_SIDE, new Item.Settings()));
 	}
 
-	public static final RoadBlock BIKE_LANE_CORNER = new RoadBlock
+	public static final DirBlock BIKE_LANE_CORNER = new DirBlock
 		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","bike_lane_corner"), BIKE_LANE_CORNER);
@@ -184,6 +188,20 @@ public class RealisticCities implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","concrete_wall"), new BlockItem(CONCRETE_WALL, new Item.Settings()));
 	}
 
+	public static final Block WHITE_BRICKS = new Block
+		(FabricBlockSettings.of(Material.STONE, MapColor.LIGHT_GRAY).sounds(BlockSoundGroup.STONE).strength(2f, 6f).requiresTool());
+	static {
+		Registry.register(Registry.BLOCK, new Identifier("realisticcities","white_bricks"), WHITE_BRICKS);
+		Registry.register(Registry.ITEM, new Identifier("realisticcities","white_bricks"), new BlockItem(WHITE_BRICKS, new Item.Settings()));
+	}
+
+	public static final Slab WHITE_BRICKS_SLAB = new Slab
+		(FabricBlockSettings.of(Material.STONE, MapColor.LIGHT_GRAY).sounds(BlockSoundGroup.STONE).strength(2f, 6f).requiresTool());
+	static {
+		Registry.register(Registry.BLOCK, new Identifier("realisticcities","white_bricks_slab"), WHITE_BRICKS_SLAB);
+		Registry.register(Registry.ITEM, new Identifier("realisticcities","white_bricks_slab"), new BlockItem(WHITE_BRICKS_SLAB, new Item.Settings()));
+	}
+	
 	public static final ThinTree THIN_TREE = new ThinTree
 		(FabricBlockSettings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(0.5f, 3f));
 	static {
@@ -242,6 +260,8 @@ public class RealisticCities implements ModInitializer {
 			stacks.add(new ItemStack(RealisticCities.VERTICAL_CONCRETE_SLAB));
 			stacks.add(new ItemStack(RealisticCities.CONCRETE_STAIRS));
 			stacks.add(new ItemStack(RealisticCities.CONCRETE_WALL));
+			stacks.add(new ItemStack(RealisticCities.WHITE_BRICKS));
+			stacks.add(new ItemStack(RealisticCities.WHITE_BRICKS_SLAB));
 			stacks.add(new ItemStack(RealisticCities.THIN_TREE));
 			//stacks.add(new ItemStack(RealisticCities.BENCH));
 		})

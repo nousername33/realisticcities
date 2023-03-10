@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/slab",
+	"textures": {
+	  "bottom": "realisticcities:block/white_bricks",
+	  "side": "realisticcities:block/white_bricks",
+	  "top": "realisticcities:block/white_bricks"
+	}
+  }

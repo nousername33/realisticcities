@@ -26,6 +26,8 @@
     "block.realisticcities.vertical_concrete_slab": "Vertical Concrete Slab",
     "block.realisticcities.concrete_stairs": "Concrete Stairs",
     "block.realisticcities.concrete_wall": "Concrete Wall",
+    "block.realisticcities.white_bricks": "White Bricks",
+    "block.realisticcities.white_bricks_slab": "White Brick Slab",
     "block.realisticcities.thin_tree": "Thin Tree Trunk",
     "block.realisticcities.bench": "Bench"
 }
