@@ -184,7 +184,7 @@ public class RealisticCities implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","concrete_wall"), new BlockItem(CONCRETE_WALL, new Item.Settings()));
 	}
 
-	public static final Fence THIN_TREE = new Fence
+	public static final ThinTree THIN_TREE = new ThinTree
 		(FabricBlockSettings.of(Material.WOOD).sounds(BlockSoundGroup.WOOD).strength(0.5f, 3f));
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","thin_tree"), THIN_TREE);

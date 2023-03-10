@@ -25,7 +25,7 @@ public class RoadSticker extends HorizontalFacingBlock{
     }
 
     public VoxelShape getCollisionShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
-        return VoxelShapes.cuboid(0, 0, 0, 0, 0, 0);
+        return VoxelShapes.empty();
     }
 
     protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
