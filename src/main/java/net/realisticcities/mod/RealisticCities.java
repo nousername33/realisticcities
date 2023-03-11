@@ -4,17 +4,13 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.PickaxeItem;
 import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.state.StateManager;
-import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -122,7 +118,7 @@ public class RealisticCities implements ModInitializer {
 	}
 
 	public static final RoadSticker BIKE_LANE_IND = new RoadSticker
-		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
+		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(0f,0f).requiresTool());
 	static {
 		Registry.register(Registry.BLOCK, new Identifier("realisticcities","bike_lane_ind"), BIKE_LANE_IND);
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","bike_lane_ind"), new BlockItem(BIKE_LANE_IND, new Item.Settings()));

@@ -2,6 +2,19 @@
     "replace": false,
     "values": [
         "realisticcities:white_bricks",
-        "realisticcities:white_brick_slab"
+        "realisticcities:white_brick_slab",
+        "realisticcities:road",
+        "realisticcities:road_with_straight_yellow_line",
+        "realisticcities:road_with_straight_white_line",
+        "realisticcities:road_with_double_straight_yellow_line",
+        "realisticcities:road_with_double_straight_white_line",
+        "realisticcities:road_with_straight_yellow_line_side",
+        "realisticcities:road_with_straight_white_line_side",
+        "realisticcities:median_yellow",
+        "realisticcities:median_white",
+        "realisticcities:bike_median",
+        "realisticcities:bike_lane",
+        "realisticcities:bike_lane_corner",
+        "realisticcities:bike_lane_side"
     ]
 }
