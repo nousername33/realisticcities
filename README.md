@@ -1,2 +1,9 @@
-# RealisticCities
-Hi! This mod is in beta right now, so I'll get to making a wiki eventually, if needed. Contact me at HyperZ#6023 if you need help or have a suggestion or have a bug report or really anything. Thanks for checking out my mod, please forgive my mistakes, this is my first attempt. This mod is for Fabric 1.14.14 for 1.19 - 1.19.2.
+# Realistic Cities
+## Info
+Hi! First, thank you so much for checking out my mod. This is my first mod, so my optimization is probably terrible. This mod adds roads, and city blocks for now, but I add to it very frequently. 
+## To do:
+1. Add road corners
+2. Add survival recipes
+3. Add more road signs
+4. Add more decoration
+
