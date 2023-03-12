@@ -1,16 +1,16 @@
 {  
     "variants": {
         "facing=east": {
-            "model": "realisticcities:block/median_yellow_90"
+            "model": "realisticcities:block/median_yellow/median_yellow_90"
         },
         "facing=north": {
-            "model": "realisticcities:block/median_yellow"
+            "model": "realisticcities:block/median_yellow/median_yellow"
         },
         "facing=west": {
-            "model": "realisticcities:block/median_yellow_90"
+            "model": "realisticcities:block/median_yellow/median_yellow_90"
         },
         "facing=south": {
-            "model": "realisticcities:block/median_yellow"
+            "model": "realisticcities:block/median_yellow/median_yellow"
         }
     }
 }

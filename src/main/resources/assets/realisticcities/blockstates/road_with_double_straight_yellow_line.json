@@ -1,16 +1,16 @@
 {  
     "variants": {
         "facing=east": {
-            "model": "realisticcities:block/road_with_double_straight_yellow_line_90"
+            "model": "realisticcities:block/road_with_double_straight_yellow_line/road_with_double_straight_yellow_line_90"
         },
         "facing=north": {
-            "model": "realisticcities:block/road_with_double_straight_yellow_line"
+            "model": "realisticcities:block/road_with_double_straight_yellow_line/road_with_double_straight_yellow_line"
         },
         "facing=west": {
-            "model": "realisticcities:block/road_with_double_straight_yellow_line_90"
+            "model": "realisticcities:block/road_with_double_straight_yellow_line/road_with_double_straight_yellow_line_90"
         },
         "facing=south": {
-            "model": "realisticcities:block/road_with_double_straight_yellow_line"
+            "model": "realisticcities:block/road_with_double_straight_yellow_line/road_with_double_straight_yellow_line"
         }
     }
 }

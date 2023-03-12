@@ -1,16 +1,16 @@
 {  
     "variants": {
         "facing=east": {
-            "model": "realisticcities:block/bike_lane_corner_90"
+            "model": "realisticcities:block/bike_lane_corner/bike_lane_corner_90"
         },
         "facing=north": {
-            "model": "realisticcities:block/bike_lane_corner"
+            "model": "realisticcities:block/bike_lane_corner/bike_lane_corner"
         },
         "facing=west": {
-            "model": "realisticcities:block/bike_lane_corner_270"
+            "model": "realisticcities:block/bike_lane_corner/bike_lane_corner_270"
         },
         "facing=south": {
-            "model": "realisticcities:block/bike_lane_corner_180"
+            "model": "realisticcities:block/bike_lane_corner/bike_lane_corner_180"
         }
     }
 }

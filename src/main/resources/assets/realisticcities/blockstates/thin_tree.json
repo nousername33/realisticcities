@@ -2,12 +2,12 @@
     "multipart": [
       {
         "apply": {
-          "model": "realisticcities:block/thin_tree_post"
+          "model": "realisticcities:block/thin_tree/thin_tree_post"
         }
       },
       {
         "apply": {
-          "model": "realisticcities:block/thin_tree_side",
+          "model": "realisticcities:block/thin_tree/thin_tree_side",
           "uvlock": true
         },
         "when": {
@@ -16,7 +16,7 @@
       },
       {
         "apply": {
-          "model": "realisticcities:block/thin_tree_side",
+          "model": "realisticcities:block/thin_tree/thin_tree_side",
           "uvlock": true,
           "y": 90
         },
@@ -26,7 +26,7 @@
       },
       {
         "apply": {
-          "model": "realisticcities:block/thin_tree_side",
+          "model": "realisticcities:block/thin_tree/thin_tree_side",
           "uvlock": true,
           "y": 180
         },
@@ -36,7 +36,7 @@
       },
       {
         "apply": {
-          "model": "realisticcities:block/thin_tree_side",
+          "model": "realisticcities:block/thin_tree/thin_tree_side",
           "uvlock": true,
           "y": 270
         },
