@@ -10,6 +10,8 @@
         "realisticcities:road_with_double_straight_white_line",
         "realisticcities:road_with_straight_yellow_line_side",
         "realisticcities:road_with_straight_white_line_side",
+        "realisticcities:road_with_corner_yellow_line",
+        "realisticcities:road_with_corner_white_line",
         "realisticcities:median_yellow",
         "realisticcities:median_white",
         "realisticcities:bike_median",

@@ -75,6 +75,20 @@ public class RealisticCities implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("realisticcities","road_with_double_straight_white_line"), new BlockItem(ROAD_WITH_DOUBLE_STRAIGHT_WHITE_LINE, new Item.Settings()));
 	}
 
+	public static final DirBlock ROAD_WITH_CORNER_YELLOW_LINE = new DirBlock
+		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
+	static {
+		Registry.register(Registry.BLOCK, new Identifier("realisticcities","road_with_corner_yellow_line"), ROAD_WITH_CORNER_YELLOW_LINE);
+		Registry.register(Registry.ITEM, new Identifier("realisticcities","road_with_corner_yellow_line"), new BlockItem(ROAD_WITH_CORNER_YELLOW_LINE, new Item.Settings()));
+	}
+
+	public static final DirBlock ROAD_WITH_CORNER_WHITE_LINE = new DirBlock
+		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
+	static {
+		Registry.register(Registry.BLOCK, new Identifier("realisticcities","road_with_corner_white_line"), ROAD_WITH_CORNER_WHITE_LINE);
+		Registry.register(Registry.ITEM, new Identifier("realisticcities","road_with_corner_white_line"), new BlockItem(ROAD_WITH_CORNER_WHITE_LINE, new Item.Settings()));
+	}
+
 	public static final DirBlock MEDIAN_YELLOW = new DirBlock
 		(FabricBlockSettings.of(Material.STONE).sounds(BlockSoundGroup.STONE).strength(1.5f,6f).requiresTool());
 	static {
@@ -227,6 +241,8 @@ public class RealisticCities implements ModInitializer {
 			stacks.add(new ItemStack(RealisticCities.ROAD_WITH_STRAIGHT_WHITE_LINE_SIDE));
 			stacks.add(new ItemStack(RealisticCities.ROAD_WITH_DOUBLE_STRAIGHT_YELLOW_LINE));
 			stacks.add(new ItemStack(RealisticCities.ROAD_WITH_DOUBLE_STRAIGHT_WHITE_LINE));
+			stacks.add(new ItemStack(RealisticCities.ROAD_WITH_CORNER_YELLOW_LINE));
+			stacks.add(new ItemStack(RealisticCities.ROAD_WITH_CORNER_WHITE_LINE));
 			stacks.add(new ItemStack(RealisticCities.MEDIAN_YELLOW));
 			stacks.add(new ItemStack(RealisticCities.MEDIAN_WHITE));
 			stacks.add(new ItemStack(RealisticCities.BIKE_MEDIAN));
