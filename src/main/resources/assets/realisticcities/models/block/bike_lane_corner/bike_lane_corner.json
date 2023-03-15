@@ -4,8 +4,8 @@
         "up": "realisticcities:block/bike_lane_corner",
         "down": "realisticcities:block/bike_lane_corner_270",
         "north": "realisticcities:block/road",
-        "south": "realisticcities:block/bike_lane_side_side",
-        "east": "realisticcities:block/bike_lane_side_side_180",
+        "south": "realisticcities:block/bike_lane_side",
+        "east": "realisticcities:block/bike_lane_side_180",
         "west": "realisticcities:block/road",
         "particle": "realisticcities:block/bike_lane_corner"
     }
